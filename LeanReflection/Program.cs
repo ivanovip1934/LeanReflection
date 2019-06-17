@@ -6,6 +6,7 @@ namespace LeanReflection
    
     class Program
     {
+        public static object DeclaredOnly { get; private set; }
 
         static void Main(string[] args)
         {
@@ -16,7 +17,7 @@ namespace LeanReflection
                 "в классе " + t.Name);
             Console.WriteLine();
             Console.WriteLine("Поддерживаемые методы: ");
-            MethodInfo[] mi = t.GetMethods();
+            MethodInfo[] mi = t.GetMethods(BindingFlags.Public|BindingFlags.DeclaredOnly|BindingFlags.Instance);
 
             // Вывести методы, поддерживаемые в классе MyClass.
             foreach (MethodInfo m in mi) {
