@@ -36,11 +36,13 @@ namespace LeanReflection
         public void Set(int a, int b) {
             x = a;
             y = b;
+            Show();
         }
 
         public void Set(double a, double b) {
             x = (int)a;
             y = (int)b;
+            Show();
         }
 
         public void Show() {
