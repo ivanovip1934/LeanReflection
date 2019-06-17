@@ -11,9 +11,17 @@ namespace LeanReflection
         int x;
         int y;
 
+        public MyClass(int i) {
+            Console.WriteLine("Конструирование класса MyClass(int). ");
+            x = y = i;
+            Show();
+        }
+
         public MyClass(int i, int j) {
+            Console.WriteLine("Конструирование класса MyClass(int , int). ");
             x = i;
             y = j;
+            Show();
         }
 
         public int Sum() {
