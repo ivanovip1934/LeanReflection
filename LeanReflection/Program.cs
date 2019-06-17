@@ -6,8 +6,7 @@ namespace LeanReflection
    
     class Program
     {
-        public static object DeclaredOnly { get; private set; }
-
+        
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
