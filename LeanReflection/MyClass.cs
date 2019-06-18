@@ -48,7 +48,7 @@ namespace LeanReflection
         }
 
         public void Show() {
-            Console.WriteLine($"x: {x}, y: {y}");
+            Console.WriteLine($"Значение x: {x}, значение y: {y}");
         }
 
 
