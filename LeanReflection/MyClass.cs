@@ -34,12 +34,14 @@ namespace LeanReflection
         }
 
         public void Set(int a, int b) {
+            Console.Write("В методе Set(int, int). ");
             x = a;
             y = b;
             Show();
         }
 
         public void Set(double a, double b) {
+            Console.Write("В методе Set(double, double). ");
             x = (int)a;
             y = (int)b;
             Show();
