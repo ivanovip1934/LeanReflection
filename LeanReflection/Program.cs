@@ -53,11 +53,13 @@ namespace LeanReflection
             else
                 Console.WriteLine("Найден конструктор с двумя параметрами.\n");
 
+            #region CreateObject
             // Сконструировать объект.
             object[] consargs = new object[2];
             consargs[0] = 10;
             consargs[1] = 20;
             object reflectOb = ci[x].Invoke(consargs);
+            #endregion
 
             Console.WriteLine("\nВызов методов для объекта reflectOb.");
             Console.WriteLine();
